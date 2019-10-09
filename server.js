@@ -18,7 +18,7 @@ app.use(router)
 
 const Message = require("./model/Message");
 
-app.post("/send", async (req, res) => {
+app.post("/", async (req, res) => {
     const pass = req.body.pass
     const text = req.body.message
     const date = Date.now()
@@ -44,4 +44,4 @@ app.post("/send", async (req, res) => {
 });
 
 
-app.listen("5000", () => console.log("app is listnenig on 5000"))
+app.listen("3000", () => console.log("app is listnenig on 5000"))
