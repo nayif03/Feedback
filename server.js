@@ -33,7 +33,7 @@ app.post("/send", async (req, res) => {
     })
     try {
         const sendMessage = await message.save()
-        res.send( '<h2 style="margin:10% auto; text-align: center" >your message has been sent! Dankeschön 🙏 </h2>' )
+        res.send('<h2 style="margin:10% auto; text-align: center" >your message has been sent! Dankeschön 🙏 </h2>')
         console.log("created")
     } catch (err) {
         console.log(err)
